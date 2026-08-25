@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đề 3</title>
+  </head>
+  <body>
+    <header>
+      <h1>Fastfood System</h1>
+      <p>MSSV... - Họ Tên:...</p>
+    </header>
+    <main>
+      <nav>
+        <button onclick="hienThi('Chicken')">Gà Rán</button>
+        <button onclick="hienThi('Spag')">Mỳ Ý</button>
+        <button onclick="hienThi('Bur')">Burger</button>
+      </nav>
+      <section id="Chicken" class="info">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">
+          Combo Gà Rán Vui vẻ
+        </h2>
+        <p>
+          Combo bao gồm 2 miếng gà giòn rụm, 1 khoai tây chiên và 1 nước ngọt...
+        </p>
+      </section>
+      <section id="Spag" class="info">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">
+          Combo Cặp Đôi Ăn Ý
+        </h2>
+        <p>
+          Combo gồm 2 mỳ ý vừa,2 nước ngọt,2 miếng gà giòn vui vẻ,1 phần khoai
+          tây chiên.
+        </p>
+      </section>
+      <section id="Bur" class="info">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">
+          Combo Nhanh Và Tiện
+        </h2>
+        <p>Combo gồm 1 burger gà giòn,1 nước ngọt,1 phần khoai tây chiên.</p>
+      </section>
+      <section class="thanhToan">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">
+          Máy Tính Tiền
+        </h2>
+        <label>Tổng hóa đơn(VNĐ)</label>
+        <input
+          type="number"
+          id="cost"
+          class="text-box"
+          readonly
+          value="155000"
+        /><br /><br />
+        <label>Tiền khách Đưa(VNĐ)</label>
+        <input type="number" id="cash" class="text-box" /><br /><br />
+        <button onclick="tinhTien()">Tính Tiền Thừa</button>
+
+        <label>Tiền Thối Lại(VNĐ)</label>
+        <input
+          type="number"
+          id="ketqua"
+          class="text-box"
+          readonly
+        /><br /><br />
+      </section>
+    </main>
+  </body>
+</html>
