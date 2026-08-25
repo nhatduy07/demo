@@ -1,0 +1,96 @@
+header {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 1px solid black;
+  display: flex;
+  padding: 5px;
+  background-color: cornflowerblue;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 6px 12px lightcoral;
+  justify-content: space-between;
+}
+nav {
+  border-bottom: 1px solid #ccc;
+  border-right: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  gap: 10px;
+  background-color: bisque;
+  padding: 30px;
+}
+nav button {
+  width: 100%;
+  padding: 10px;
+  background-color: aqua;
+  cursor: pointer;
+  box-shadow: 0 4px 8px lightskyblue;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+nav button:hover {
+  background-color: dodgerblue;
+  color: beige;
+  transform: translateX(20px) scale(1.03);
+  box-shadow: 0 8px 16px lightskyblue;
+}
+.noidung {
+  justify-items: center;
+  border-right: 2px solid #ccc;
+  display: none;
+  flex: 1;
+  #C {
+    display: block;
+  }
+  #DSA {
+    display: block;
+  }
+}
+#Web {
+  display: block;
+}
+main {
+  display: flex;
+  border-bottom: 1px solid;
+  border-right: 2px solid;
+  border-left: 2px solid;
+}
+.text-box {
+  background-color: blanchedalmond;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.tinhtoan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; /* Cực kỳ quan trọng: Lệnh này ép cột tính toán giãn ra chiếm TOÀN BỘ khoảng trống bên phải */
+}
+
+/* Thêm khối này để đường gạch chân dài ra và chữ nhảy vào chính giữa cột */
+.tinhtoan h1 {
+  justify-items: center;
+  text-align: center;
+}
+.tinhtoan button {
+  background-color: lightgreen;
+  color: black;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 0 4px 8px lawngreen;
+  box-sizing: border-box;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.tinhtoan button:hover {
+  background-color: darkgreen;
+  color: white;
+  box-shadow: 0 5px 10px greenyellow;
+  transform: translateY(-5px) scale(1.03);
+}

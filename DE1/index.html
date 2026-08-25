@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đề 1</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cổng thông tin sinh viên</h1>
+      <p>MSSV:2551010028 - Họ và tên:...</p>
+    </header>
+    <main>
+      <nav>
+        <button onclick="hienThi('C')">Lập trình C</button>
+        <button onclick="hienThi('Web')">Ứng dụng web</button>
+        <button onclick="hienThi('DSA')">Cấu Trúc Dữ Liệu</button>
+      </nav>
+      <section id="C" class="noidung">
+        <h1 style="border-bottom: 1px solid #ccc; padding-bottom: 10px">
+          Giới thiệu lập trình C
+        </h1>
+        <p>Khóa học cung cấp kiến thức nền tảng về ngôn ngữ lập trình C</p>
+      </section>
+      <section id="Web" class="noidung">
+        <h1 style="border-bottom: 1px solid #ccc; padding-bottom: 10px">
+          Giới thiệu ứng dụng web
+        </h1>
+        <p>
+          Khóa học cung cấp kiến thức nền tảng về HTML, CSS và JavaScript...
+        </p>
+      </section>
+      <section id="DSA" class="noidung">
+        <h1 style="border-bottom: 1px solid #ccc; padding-bottom: 10px">
+          Giới thiệu cấu trúc dữ liệu
+        </h1>
+        <p>Khóa học cung cấp kiến thức nền tảng về cấu trúc dữ liệu</p>
+      </section>
+      <section id="tinhUCLN" class="tinhtoan">
+        <h1
+          style="
+            text-align: center;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+          "
+        >
+          Tính ước chung lớn nhất
+        </h1>
+        <textarea
+          id="num1"
+          class="text-box"
+          placeholder="Nhập số thứ 1(vd:18)"
+        ></textarea>
+        <br />
+        <textarea
+          id="num2"
+          class="text-box"
+          placeholder="Nhập số thứ 2(vd:36)"
+        ></textarea>
+        <button onclick="UCLN()">Tính kết quả</button>
+        <textarea
+          id="ketqua"
+          class="text-box"
+          placeholder="Kết quả:"
+        ></textarea>
+        <br />
+        <br />
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

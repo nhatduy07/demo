@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đề 2</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GEAR-THẾ GIỚI GAMING</h1>
+      <p>MSSV:2551010028 - Họ Tên:...</p>
+    </header>
+    <main>
+      <nav>
+        <button onclick="hienThi('Aula', 500000)">Bàn phím cơ AULA</button>
+        <button onclick="hienThi('Mouse', 300000)">Chuột không dây</button>
+        <button onclick="hienThi('Pad', 50000)">Lót chuột LED</button>
+      </nav>
+      <section id="Aula" class="info">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">
+          Bàn phím cơ AULA 75%
+        </h2>
+        <p>Bàn phím cơ custom nhỏ gọn, chống nước, LED RGB nhiều màu sắc...</p>
+      </section>
+      <section id="Mouse" class="info">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">
+          Chuột không giây AULA
+        </h2>
+        <p>Chuột không dây tiện lợi, có 3 mode kết nối ,nhỏ gọn...</p>
+      </section>
+      <section id="Pad" class="info">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">
+          Lót chuột RAZER
+        </h2>
+        <p>
+          Lót chuột đậm chất gaming, LED viền RGB tùy chỉnh,thích hợp chơi
+          game,..
+        </p>
+      </section>
+      <section class="thanhToan">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">Thanh Toán</h2>
+        <label>Đơn giá(VNĐ):</label>
+        <input
+          type="number"
+          id="cost"
+          class="text-box"
+          value="500000"
+          readonly
+        /><br /><br />
+        <label>Số lượng</label>
+        <input
+          type="number"
+          id="quantity"
+          class="text-box"
+          value="2"
+        /><br /><br />
+        <label>Phương thức</label>
+        <select id="choice" class="text-box">
+          <option value="cash">Tiền mặt</option>
+          <option value="momo" selected>Momo(giảm 10%)</option>
+          <option value="card">Thẻ ngân hàng</option></select
+        ><br /><br />
+
+        <button onclick="tinhTien()">Thanh toán</button><br /><br />
+        <textarea
+          id="ketqua"
+          class="text-box"
+          readonly
+          placeholder="số tiền cần trả là..."
+          rows="5"
+          cols="20"
+        ></textarea>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
