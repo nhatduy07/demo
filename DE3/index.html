@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đề 3</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
@@ -12,9 +13,9 @@
     </header>
     <main>
       <nav>
-        <button onclick="hienThi('Chicken')">Gà Rán</button>
-        <button onclick="hienThi('Spag')">Mỳ Ý</button>
-        <button onclick="hienThi('Bur')">Burger</button>
+        <button onclick="hienThi('Chicken', 155000)">Gà Rán</button>
+        <button onclick="hienThi('Spag', 145000)">Mỳ Ý</button>
+        <button onclick="hienThi('Bur', 75000)">Burger</button>
       </nav>
       <section id="Chicken" class="info">
         <h2 style="border-bottom: 1px solid #ccc; padding: 10px">
@@ -48,21 +49,18 @@
           type="number"
           id="cost"
           class="text-box"
-          readonly
           value="155000"
+          readonly
         /><br /><br />
         <label>Tiền khách Đưa(VNĐ)</label>
         <input type="number" id="cash" class="text-box" /><br /><br />
         <button onclick="tinhTien()">Tính Tiền Thừa</button>
 
         <label>Tiền Thối Lại(VNĐ)</label>
-        <input
-          type="number"
-          id="ketqua"
-          class="text-box"
-          readonly
-        /><br /><br />
+        <textarea type="text" id="ketqua" class="text-box" readonly></textarea
+        ><br /><br />
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

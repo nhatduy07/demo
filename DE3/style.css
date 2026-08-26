@@ -1,0 +1,74 @@
+header {
+  background-color: orangered;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+header h1 {
+  text-shadow: 0 3px 6px gainsboro;
+}
+main {
+  display: flex;
+}
+nav {
+  padding: 20px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 60px;
+  justify-content: center;
+}
+nav button {
+  background-color: coral;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 3px 6px darkred;
+  transition: 0.3s;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+nav button:hover {
+  background-color: brown;
+  color: white;
+  box-shadow: 0 4px 10px red;
+  transform: translateX(10px);
+}
+body {
+  border: 1px solid black;
+}
+.info {
+  padding: 20px;
+  display: none;
+  align-items: center;
+  flex: 1;
+}
+#Chicken {
+  display: block;
+}
+.thanhToan {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.text-box {
+  background-color: antiquewhite;
+  padding: 10px;
+  border-radius: 5px;
+}
+.thanhToan button {
+  padding: 15px;
+  background-color: orange;
+  border-radius: 5px;
+  color: white;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  transition: 0.3s;
+}
+.thanhToan button:hover {
+  background-color: orangered;
+  color: azure;
+  transform: translateY(-8px);
+}
