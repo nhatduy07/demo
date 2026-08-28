@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đề 5</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CLOUD & HOSTING SERVICES</h1>
+      <p>MSSV:... - Họ Tên:...</p>
+    </header>
+    <main>
+      <nav>
+        <button onclick="hienThi('domain')">Quản lý Domain</button>
+        <button onclick="hienThi('server')">Hosting / Server</button>
+        <button onclick="hienThi('copilot')">Tài khoản Copilot</button>
+      </nav>
+      <section id="domain" class="info">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">
+          Cấu hình Tên Miền
+        </h2>
+        <p>
+          Quản lý các bản ghi DNS, trỏ IP và thiết lập không gian lưu trữ mã
+          nguồn cho website...
+        </p>
+      </section>
+      <section id="server" class="info">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">...Loading</h2>
+        <p>...loading</p>
+      </section>
+      <section id="copilot" class="info">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">...Loading</h2>
+        <p>...loading</p>
+      </section>
+      <section class="trial">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">
+          Lịch Hủy Dùng Thử
+        </h2>
+        <label>Chọn ngày đăng kí</label><br />
+        <input type="date" id="ngaydangki" class="text-box" /><br /><br />
+        <label>Thời hạn(ngày)</label><br />
+        <input
+          type="number"
+          id="ngayhuy"
+          class="text-box"
+          value="30"
+        /><br /><br />
+        <button onclick="tinhToan()">Tính ngày hủy</button><br />
+        <input
+          type="text"
+          id="ketqua"
+          class="text-box"
+          readonly
+          style="font-weight: bold"
+        />
+      </section>
+    </main>
+  </body>
+</html>

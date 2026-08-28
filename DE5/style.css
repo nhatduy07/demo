@@ -1,0 +1,43 @@
+header {
+  background-color: rgb(3, 3, 57);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  border: 1px solid;
+}
+main {
+  display: flex;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: cadetblue;
+  width: 70px;
+  gap: 20px;
+}
+nav button {
+  background-color: rgb(10, 10, 129);
+  color: azure;
+  padding: 10px;
+  border-radius: 4px;
+  width: 70px;
+}
+nav button:hover {
+  background-color: rgb(45, 23, 184);
+}
+.info {
+  display: flex;
+  flex: 1;
+  justify-items: center;
+  display: none;
+}
+#domain {
+  display: block;
+}
+.trial {
+  display: flex;
+  flex-direction: column;
+}

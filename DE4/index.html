@@ -3,7 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Đề 4</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>ENGLISH STUDY CORNER (B1)</h1>
+      <p>MSSV:... - Họ Tên:...</p>
+    </header>
+    <main>
+      <nav>
+        <button onclick="hienThi('vocabulary')">Vocabulary</button>
+        <button onclick="hienThi('grammar')">Grammar Rules</button>
+        <button onclick="hienThi('reading')">Reading Test</button>
+      </nav>
+      <div class="unit">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">
+          Unit 1: Everyday Life
+        </h2>
+        <section id="vocabulary" class="info">
+          <h3>Vocabulary</h3>
+          <ul>
+            <li>Car: ô tô</li>
+            <li>Rain: mưa</li>
+            <li>Important: quan trọng</li>
+          </ul>
+        </section>
+        <section id="grammar" class="info">
+          <h3>Grammar Rules</h3>
+          <p>
+            Here are some useful short and easy-to-learn phrases for daily
+            conversations...
+          </p>
+        </section>
+        <section id="reading" class="info">
+          <h3>Reading Test</h3>
+          <p>
+            Last weekend, Anna went to the countryside with her family. They
+            left home early on Saturday morning and traveled by bus. When they
+            arrived, they visited a small farm and saw many animals, including
+            cows, chickens, and horses. In the afternoon, Anna helped her mother
+            prepare lunch. After that, the family walked around the village and
+            took many photos. On Sunday, they went fishing near a quiet river.
+            Anna caught two small fish and felt very happy. Before going home,
+            the family bought some fresh fruit from a local market. Anna really
+            enjoyed the trip and wants to visit the countryside again.
+          </p>
+          <ol>
+            <li>Where did Anna go last weekend?</li>
+            <li>Who did Anna go with?</li>
+            <li>How did they travel?</li>
+            <li>What animals did Anna see?</li>
+            <li>What did Anna do in the afternoon?</li>
+            <li>Where did the family go fishing?</li>
+            <li>How many fish did Anna catch?</li>
+            <li>What did the family buy before going home?</li>
+            <li>How did Anna feel about the trip?</li>
+            <li>Does Anna want to visit the countryside again?</li>
+          </ol>
+        </section>
+      </div>
+      <section class="tool">
+        <h2 style="border-bottom: 1px solid #ccc; padding: 10px">Text Tool</h2>
+        <input
+          type="text"
+          id="input-text"
+          placeholder="Nhập đoạn văn bản..."
+        /><br /><br />
+        <button onclick="count()" class="text-box">Đếm từ</button>
+        <button onclick="caps()" class="text-box">IN HOA</button>
+        <textarea type="text" id="ketqua" readonly></textarea>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>

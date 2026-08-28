@@ -1,0 +1,61 @@
+header {
+  display: flex;
+  background-color: rgb(16, 144, 19);
+  color: white;
+  justify-content: space-between;
+}
+header h1 {
+  text-shadow: 3px 6px 5px;
+}
+main {
+  display: flex;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: deepskyblue;
+  gap: 40px;
+  width: 100px;
+}
+nav button {
+  padding: 20px;
+  border-radius: 4px;
+  width: 100%;
+  background-color: chartreuse;
+  cursor: pointer;
+  transition: 0.3s;
+}
+nav button:hover {
+  background-color: springgreen;
+  color: darkslategrey;
+  transform: translateX(10px);
+}
+body {
+  border: 1px solid;
+}
+.info {
+  display: none;
+}
+#vocabulary {
+  display: block;
+}
+.unit {
+  padding: 20px;
+  flex: 1;
+}
+.tool {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#input-text {
+  padding: 20px;
+}
+.text-box {
+  padding: 15px;
+  background-color: rgb(68, 255, 252);
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
