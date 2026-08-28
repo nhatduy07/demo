@@ -24,12 +24,13 @@ nav button {
   padding: 10px;
   border-radius: 4px;
   width: 70px;
+  cursor: pointer;
 }
 nav button:hover {
   background-color: rgb(45, 23, 184);
 }
 .info {
-  display: flex;
+  padding: 20px;
   flex: 1;
   justify-items: center;
   display: none;
@@ -38,6 +39,23 @@ nav button:hover {
   display: block;
 }
 .trial {
-  display: flex;
-  flex-direction: column;
+  padding: 20px;
+}
+.text-box {
+  padding: 20px;
+  background-color: rgb(61, 72, 157);
+  color: white;
+  border-radius: 5px;
+}
+
+.trial button {
+  background-color: rgb(10, 10, 129);
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.trial button:hover {
+  background-color: rgb(45, 23, 184);
 }
